@@ -1,6 +1,6 @@
 # _Mr. Roboger's Neighborhood_
 
-#### _Takes a numerical input from user and outputs a range of numbers from 0 to the inputted number with some numbers being replaced by strings._
+#### _Takes a numerical input from user and outputs a string with the range of numbers from 0 to the inputted number with some numbers being replaced by funny words._
 
 #### By _**Cat Denton**_
 
@@ -27,6 +27,10 @@ Describe: roboRoger();
   
 Test: "It should return the string "0" if the number "0" is inputted."  
 Expect(roboRoger(0).toEqual("0"));  
+  
+Test: "It should return the string "0 Beep!" if the number "1" is inputted."  
+Expect(roboRoger(1).toEqual("0 Beep!"))  
+  
 
 ## Setup/Installation Requirements
 
