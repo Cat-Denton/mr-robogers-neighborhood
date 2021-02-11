@@ -15,6 +15,8 @@ function roboRoger(number) {
       numArray[index] = "Beep!";
     } else if (numArray[index].includes(2)) {
       numArray[index] = "Boop!";
+    } else if (numArray[index].includes(3)) {
+      numArray[index] = "Won't you be my neighbor?";
     } else {
       numArray[index] = numArray[index];
     }

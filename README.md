@@ -34,7 +34,12 @@ Expect(roboRoger(1).toEqual("0 Beep!"))
 Test: "It should return a string with all numbers that include numeral 1 replaced by "Beep!" and all numbers that include numeral 2 replaced by "Boop!"."
 Expect(roboRoger(2).toEqual("0 Beep! Boop!"))  
   
-Test: "It should return a string with all numbers that include numeral 1 replaced by "Beep!" all numbers that include the numeral 2 replaced by "Boop!" and all numbers that include numeral 3 replaced by "Won't you be my neighbor?"."  
+Test: "It should return a string with all numbers that include numeral 1 replaced by "Beep!" all numbers that include the numeral 2 replaced by "Boop!" and all numbers that include numeral 3 replaced by "Won't you be my neighbor?"." 
+Expect(roboRoger(3).toEqual("0 Beep! Boop! Won't you be my neighbor?"))  
+
+Test: "It should return a string with rules as the previous test, but the rule for numeral 3 should have priority of numeral 2 which should have priority over numeral 1."
+Expect(roboRoger(13).toEqual("0 Beep! Boop! Won't you be my neighbor? 4 5 6 7 8 9 Beep! Beep! Boop! Won't you be my neightbor?"))  
+  
   
 
   
