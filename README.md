@@ -31,6 +31,9 @@ Expect(roboRoger(0).toEqual("0"));
 Test: "It should return the string "0 Beep!" if the number "1" is inputted."  
 Expect(roboRoger(1).toEqual("0 Beep!"))  
   
+Test: "It should return the string "0 Beep! Boop!" if the number "2" is inputted."
+Expect(roboRoger(2).toEqual("0 Beep! Boop!"))
+  
 
 ## Setup/Installation Requirements
 
