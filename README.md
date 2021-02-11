@@ -28,11 +28,15 @@ Describe: roboRoger();
 Test: "It should return the string "0" if the number "0" is inputted."  
 Expect(roboRoger(0).toEqual("0"));  
   
-Test: "It should return the string "0 Beep!" if the number "1" is inputted."  
+Test: "It should return a string with all numbers that include numeral 1 replaced by "Beep!".  
 Expect(roboRoger(1).toEqual("0 Beep!"))  
   
-Test: "It should return the string "0 Beep! Boop!" if the number "2" is inputted."
-Expect(roboRoger(2).toEqual("0 Beep! Boop!"))
+Test: "It should return a string with all numbers that include numeral 1 replaced by "Beep!" and all numbers that include numeral 2 replaced by "Boop!"."
+Expect(roboRoger(2).toEqual("0 Beep! Boop!"))  
+  
+Test: "It should return a string with all numbers that include numeral 1 replaced by "Beep!" all numbers that include the numeral 2 replaced by "Boop!" and all numbers that include numeral 3 replaced by "Won't you be my neighbor?"."  
+  
+
   
 
 ## Setup/Installation Requirements

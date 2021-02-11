@@ -13,6 +13,8 @@ function roboRoger(number) {
   for (index = 0; index < numArray.length; index++) {
     if (numArray[index].includes(1)) {
       numArray[index] = "Beep!";
+    } else if (numArray[index].includes(2)) {
+      numArray[index] = "Boop!";
     } else {
       numArray[index] = numArray[index];
     }
