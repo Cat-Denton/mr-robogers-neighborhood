@@ -1,4 +1,8 @@
+//Business logic
+
 function roboRoger(number) {
+
+  if (typeof(number) != integer)
   
   const numArray = [];
   let i = 0;
@@ -9,18 +13,7 @@ function roboRoger(number) {
   }
 
   let index = 0;
-
-  // for (index = 0; index < numArray.length; index++) {
-  //   if (numArray[index].includes(1)) {
-  //     numArray[index] = "Beep!";
-  //   } else if (numArray[index].includes(2)) {
-  //     numArray[index] = "Boop!";
-  //   } else if (numArray[index].includes(3)) {
-  //     numArray[index] = "Won't you be my neighbor?";
-  //   } else {
-  //     numArray[index] = numArray[index];
-  //   }
-  // }
+  
   for (index = 0; index < numArray.length; index++) {
     if (numArray[index].includes(3)) {
       numArray[index] = "Won't you be my neighbor?";
@@ -32,7 +25,7 @@ function roboRoger(number) {
       numArray[index] = numArray [index];
     }
   }
-  
+
   let numString = "";
   numArray.forEach(function(element) {
     numString = numString + element + " ";
@@ -40,3 +33,14 @@ function roboRoger(number) {
 
   return numString.slice(0,numString.length - 1);
 }
+
+//UI logic
+
+$(document).ready(function() {
+  $("#numberForm").submit(function(event) {
+    event.preventDefault();
+    const number = parseInt($("input#number").val());
+
+    $(".roboRogerTalk").text(roboRoger(number));
+  })
+})
