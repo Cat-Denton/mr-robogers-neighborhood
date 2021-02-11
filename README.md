@@ -1,34 +1,44 @@
-# _{Application Name}_
+# _Mr. Roboger's Neighborhood_
 
-#### _{Brief description of application}_
+#### _Takes a numerical input from user and outputs a range of numbers from 0 to the inputted number with some numbers being replaced by strings._
 
-#### By _**Cat Denton {List of contributors}**_
+#### By _**Cat Denton**_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* Javascript
+* jquery-3.5.1
+* HTML
+* CSS/bootstrap
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This website takes a numerical input from that user. It will then display all of the integers from zero to the input (inclusive) with the following rules applied:_
+
+1. Numbers that contain a "1" digit: all digits are replaced with _"Beep!"_
+
+2. Numbers that contain a "2" digit: all digits are replaced with _"Boop!"_
+
+3. Numbers that contain a "3" digit: all digits are replaced with _"Won't you be my neightbor?"_
+
+## Tests
+
+Describe: roboRoger();  
+  
+Test: "It should return the string "0" if the number "0" is inputted."  
+Expect(roboRoger(0).toEqual("0"));  
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* _Clone to a local repository_
+* _Open with a text editor to view the code_
+* _Open index.html with a web browser to use the website_
+* _{gh-pages distribution goes here}_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _None yet_
+
 
 ## License
 
