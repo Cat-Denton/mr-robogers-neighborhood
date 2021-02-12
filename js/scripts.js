@@ -2,7 +2,7 @@
 
 function roboRoger(number) {
 
-  if (typeof(number) != integer)
+  // if (typeof(number) != integer)
   
   const numArray = [];
   let i = 0;
@@ -38,9 +38,12 @@ function roboRoger(number) {
 
 $(document).ready(function() {
   $("#numberForm").submit(function(event) {
-    event.preventDefault();
-    const number = parseInt($("input#number").val());
+    
+    const num = $("input#number").val();
 
-    $(".roboRogerTalk").text(roboRoger(number));
-  })
-})
+    const story = roboRoger(parseInt(num));
+    $("#roboRogerTalk").text(story);
+
+    event.preventDefault();
+  });
+});
