@@ -2,27 +2,17 @@
 
 function roboRoger(number) {
 
-  // if (typeof(number) != integer)
-  
   const numArray = [];
-  let i = 0;
 
-  while (i <= number) {
-    numArray.push(i.toString());
-    i ++;
-  }
-
-  let index = 0;
-  
-  for (index = 0; index < numArray.length; index++) {
-    if (numArray[index].includes(3)) {
+  for (let index = 0; index <= number; index++) {
+    if(index.toString().includes(3)) {
       numArray[index] = "Won't you be my neighbor?";
-    } else if (numArray[index].includes(2)) {
+    } else if (index.toString().includes(2)) {
       numArray[index] = "Boop!";
-    } else if (numArray[index].includes(1)) {
+    } else if (index.toString().includes(1)) {
       numArray[index] = "Beep!";
     } else {
-      numArray[index] = numArray [index];
+      numArray[index] = index.toString();
     }
   }
 
