@@ -32,6 +32,7 @@ function roboRoger(number) {
   })
 
   return numString.slice(0,numString.length - 1);
+  
 }
 
 //UI logic
@@ -43,6 +44,10 @@ $(document).ready(function() {
 
     const story = roboRoger(parseInt(num));
     $("#roboRogerTalk").text(story);
+
+    $("#firstButton").hide();
+
+    $("#repeatButton").show();
 
     event.preventDefault();
   });
