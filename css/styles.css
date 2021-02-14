@@ -9,3 +9,10 @@
   display:none;
 }
 
+#roboRogersPic {
+  max-width: 25%;
+  float:left;
+  padding: 5px;
+  display:none;
+}
+

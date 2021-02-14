@@ -4,9 +4,11 @@ function roboRoger(number) {
 
   if (number > 100) {
     document.getElementById("roboRogerTalk").style.color = "red";
+    $("#roboRogersPic").show();
     return "Mr. roboRogers doesn't have all day! Input a smaller number so they don't get angry!"
   }
 
+  $("#roboRogersPic").hide();
   const numArray = [];
 
   for (let index = 0; index <= number; index++) {
