@@ -2,6 +2,11 @@
 
 function roboRoger(number) {
 
+  if (number > 100) {
+    document.getElementById("roboRogerTalk").style.color = "red";
+    return "Mr. roboRogers doesn't have all day! Input a smaller number so they don't get angry!"
+  }
+
   const numArray = [];
 
   for (let index = 0; index <= number; index++) {
@@ -21,6 +26,8 @@ function roboRoger(number) {
     numString = numString + element + " ";
   })
 
+  document.getElementById("roboRogerTalk").style.color = "black";  
+  //this removes an extraneous space from the end of numString and returns it
   return numString.slice(0,numString.length - 1);
   
 }
