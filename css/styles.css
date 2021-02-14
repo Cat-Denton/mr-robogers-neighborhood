@@ -1,1 +1,6 @@
-
+.btn {
+  outline-color: black;
+  outline-width: 5px;
+  background-color: blue;
+  color:blanchedalmond;
+}
