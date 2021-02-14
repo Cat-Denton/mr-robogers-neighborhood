@@ -24,10 +24,17 @@ function roboRoger(number) {
   }
 
   let numString = "";
-  numArray.forEach(function(element) {
-    numString = numString + element + " ";
-  })
 
+  if (number === 69) {
+    numArray.forEach(function(element) {
+      numString = numString + element + " ";
+    });
+    numString += "...nice ";
+  } else {
+    numArray.forEach(function(element) {
+      numString = numString + element + " ";
+    });
+  }
   document.getElementById("roboRogerTalk").style.color = "black";  
   //this removes an extraneous space from the end of numString and returns it
   return numString.slice(0,numString.length - 1);
